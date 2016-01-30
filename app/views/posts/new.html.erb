@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Create a New Post</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+<link rel = "stylesheet" type = "text/css" href = "/css/new_post.css">
+<body>
+    <div class = "profile">
+      <%= image_tag @user.avatar.url(:thumb) %>
+    </div>
+    <div class = "firstname">
+      <b> <%= @user.first_name %> </b>
+    </div>
+
+<h2> LazeTravel </h2>
+
+  <nav id="navigation" class="clearfix">
+    <ul>
+      <!-- <li><a href="/posts">Home</a></li> -->
+      <li><%= link_to "Home",  posts_path %></li>
+      <li><%= link_to "New Post", new_post_path %></li>
+      <li><%= link_to 'Discover', post_path(:id) %></li>
+      <li><%= link_to "My Post", user_path(@user.id) %></li>
+    </ul>
+  </nav>
+
+<div class="gallery">
+    <div class="carousel-inner">
+      <div class="item">
+        <div class = "bg1"></div>
+          <div class="carousel-caption">
+          Visit Austrailia
+          </div>
+    </div>
+    <div class="item">
+        <div class="bg3"></div>
+          <div class="carousel-caption">
+          Visit Barcelona
+          </div>
+    </div>
+
+<h3> Upload Image </h3>
+<div class = "img-upload">
+<%= form_for @post, 
+:url => posts_path, 
+:html => { :multipart => true } do |form| %>  
+<%= form.file_field :image %>
+<%= form.label :caption %>
+<%= form.text_area :content %>
+<br>
+<%= form.submit :submit %>
+<% end %>
+</div>
+
+</body>
+</html>
+

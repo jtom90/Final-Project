@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>LazeTravel - Traveling Website</title>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+	<link rel = "stylesheet" type= "text/css" href="app/assets/stylesheets/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Tillana:400,800' rel='stylesheet' type='text/css'>
+	<link rel = "javascript" type= "javascript" href = "app/assets/javascripts/index.js">
+
+</head>
+
+<body>
+    <div class = "profile">
+      <%= image_tag @user.avatar.url(:medium) %>
+    </div>
+
+  <h1> Welcome...you have arrived at your destination </h1>
+  <h2> LazeTravel </h2>
+
+	<nav id="navigation" class="clearfix">
+    <ul>
+      <li><a href="/posts">Home</a></li>
+      <li><a href="/posts/new">New Post</a></li>
+      <li><a href="/posts/:id">Discover</a></li>
+      <li><a href="/posts/:id/edit">My Posts</a></li>
+    </ul>
+  </nav>
+
+	<div class="gallery">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class = "bg1"></div>
+          <div class="carousel-caption">
+          Visit Tokyo
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg2"></div>
+          <div class="carousel-caption">
+          Visit Thailand
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg3"></div>
+          <div class="carousel-caption">
+          Visit Greece
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg4"></div>
+          <div class="carousel-caption">
+          Visit Iceland
+          </div>
+      </div>
+
+
+
+
+
+</body>
+</html>

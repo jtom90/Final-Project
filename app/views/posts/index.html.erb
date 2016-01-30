@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>LazeTravel - Traveling Website</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Tillana:400,800' rel='stylesheet' type='text/css'>
+  <link rel = "stylesheet" type= "text/css" href="app/assets/stylesheets/index.css">
+	<script src = "app/assets/javascripts/index.js"></script>
+
+</head>
+
+<body>
+
+    <div class = "profile">
+      <%= image_tag @user.avatar.url(:medium) %>
+    </div>
+    <div class = "firstname">
+      <b> <%= @user.first_name %> </b>
+    </div>
+  <h1> Welcome...you have arrived at your destination </h1>
+  <h2> LazeTravel </h2>
+
+  <nav id="navigation" class="clearfix">
+    <ul>
+      <!-- <li><a href="/posts">Home</a></li> -->
+      <li><%= link_to "Home",  posts_path %></li>
+      <li><%= link_to "New Post", new_post_path %></li>
+      <li><%= link_to 'Discover', post_path(:id) %></li>
+      <li><%= link_to "My Post", user_path(@user.id) %></li>
+    </ul>
+  </nav>
+
+	<div class="gallery">
+    <!-- Wrapper for slides -->
+    <div class="item">
+      <div class="item active">
+        <div class = "bg1"></div>
+          <div class="carousel-caption">
+          Visit Tokyo
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg2"></div>
+          <div class="carousel-caption">
+          Visit Thailand
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg3"></div>
+          <div class="carousel-caption">
+          Visit Greece
+          </div>
+      </div>
+      <div class="item">
+        <div class="bg4"></div>
+          <div class="carousel-caption">
+          Visit Iceland
+          </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

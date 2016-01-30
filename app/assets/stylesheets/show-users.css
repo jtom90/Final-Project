@@ -1,0 +1,17 @@
+.edit-image img {
+	width:150px;
+	height:150px;
+	border: solid 2px black;
+	float:left;
+	display:inline-block;
+	margin:20px;
+}
+
+.clear {
+	clear:both;
+
+}
+.post {
+	display:inline-block;
+	text-align:bottom;
+}
