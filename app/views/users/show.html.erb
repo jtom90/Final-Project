@@ -2,9 +2,18 @@
 <head>
 	<title>LazeTravel</title>
 </head>
-<link rel = "stylesheet" type = "text/css" href = "/app/assets/stylesheets/show-users.css">
+<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/showusers.css">
 
 <body>
+	<h2> LazeTravel </h2>
+
+	<div class = "profile">
+      <%= image_tag @user.avatar.url(:medium) %>
+    </div>
+    <div class = "firstname">
+      <b> <%= @user.first_name %> </b>
+    </div>
 
 <nav id="navigation" class="clearfix">
 	<ul>
@@ -17,13 +26,18 @@
   </nav>
 
 
-<h2> LazeTravel </h2>
+<h3> My Posts </h3>
+
 <div class = "edit-image">
 <% @user.posts.each do |post| %>
+<div class = "float">
 <%= image_tag post.image.url(:medium) %>
-<%= post.content %>							
+<div class = "clear"></div>
+<%= post.content %>	
+</div>						
 <% end %>
 </div>
+<div class = "clear"></div>
 
 </body>
 </html>

@@ -1,82 +1,21 @@
-.posts img {
+img {
 	width:250px;
 	height:250px;
-	border: solid 2px black;
-	float:left;
-	display:inline-block;
-	margin:20px;
+	margin:10px;
+  border:solid 2px black;
 }
-h1 {
-	background-color:lightblue;
-	color:white;
-	position:absolute;
-	left: 200px;
-	top: 250px;
-	font-family: 'Tillana', cursive;
-	font-size:30px;
-}
-img {
-	width:1250px;
-	height:500px;
+.pleasefloat {
+  width: 33.333%;
+  float: left;
+  text-align:center;
 }
 h2 {
 	font-family: 'Mrs Sheppards', cursive;
 	font-size:50px;
 	text-align:center;
-	background-image: url("http://gph.is/17AZXBi");
-	background-size:cover;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.gallery {
-	height:500px;
-}
-.bg1{
-	background-image: url("http://vignette3.wikia.nocookie.net/olympians/images/4/40/Tokyo-Main-Image.jpg/revision/latest?cb=20150706064906");
-	width:100%;
-	height:400px;
-	background-size:cover;
-
-}
-.bg2 {
-	background-image: url("http://www.betches.com/sites/default/files/article/list/images/thailand2.jpg");
-	width:100%;
-	height:400px;
-	background-size:cover;
-
-}
-.bg3 {
-	background-image: url("https://wdpromedia.disney.go.com/resize/mwImage/1/1200/600/90/wdpromedia.disney.go.com/media/abd/refresh/europe/greece-vacations/adventures-by-disney-europe-greece-hero-01-domes-of-santorini.jpg");
-	width:100%;
-	height:400px;
-	background-size:cover;
-}
-.bg4 {
-	background-image: url("http://blog.superbreak.com/wp-content/uploads/2014/10/NorthernLights2.jpg");
-	width:100%;
-	height:400px;
-	background-size:cover;
-
-}
-li {
-	list-style-type:none;
-}
-.profile img {
-	width:50px;
-	height:50px;
-	float:right;
-	padding-right:10px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
-.carousel-caption {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+h1 {
+  text-align:center;
 }
 #navigation {
   background-color: #eee;
@@ -90,9 +29,6 @@ li {
   display: block;
   float: left;
   margin: 0;
-}
-#navigation li:last-child {
-  border-right-width: 0;
 }
 #navigation a {
   background-color: #eee;
@@ -117,4 +53,22 @@ li {
 }
 .clearfix:after {
   clear: both;
+}
+.profile img {
+	width:50px;
+	height:50px;
+	float:right;
+	padding-right:10px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.firstname {
+	position: absolute;
+	top: 70px;
+	right:40px;
+	font-size: 16px;
+}
+.clear {
+  clear:both;
 }
