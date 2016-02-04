@@ -8,6 +8,8 @@ class Post < ActiveRecord::Base
                     :default_url => "/images/normal/missing.png"
 
   	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/s
+
+  	scoped_search on: [:first_name, :content]
 	# geocoded_by :ip_address, :latitude => :lat, :longitude => :lon
 
 	# after_validation :geocode

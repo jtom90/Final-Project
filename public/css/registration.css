@@ -1,0 +1,24 @@
+body {
+	background-image: url("../images/travel.gif");
+	width:100%;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+h2 {
+	font-family: 'Mrs Sheppards', cursive;
+	font-size:50px;
+	text-align:center;
+}
+.registrationbox {
+	width:250px;
+	height:250px;
+	margin:0 auto;
+	border: 5px black solid;
+	text-align:center;
+	background: rgba(255, 153, 51, 0.25);
+	border-radius: 25px;
+	padding-top:10px;
+}
+.field {
+	font-family: 'Roboto', sans-serif;
+}

@@ -31,6 +31,8 @@ gem 'paperclip', '~> 4.2'
 
 gem 'gmaps4rails'
 
+gem "scoped_search"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

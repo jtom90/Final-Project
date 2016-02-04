@@ -1,9 +1,9 @@
 <html>
 <head>
 	<title>LazeTravel</title>
+  <link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/showusers.css">
 </head>
-<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/showusers.css">
 
 <body>
 	<h2> LazeTravel </h2>
@@ -33,7 +33,11 @@
 <div class = "float">
 <%= image_tag post.image.url(:medium) %>
 <div class = "clear"></div>
-<%= post.content %>	
+<%= @user_location.address %>
+<br>
+<%= post.content %>
+<br>
+<%= link_to "Delete", post, :data => {:confirm => 'Are you sure?'}, :method => :delete %>	
 </div>						
 <% end %>
 </div>

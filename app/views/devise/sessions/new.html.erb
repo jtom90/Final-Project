@@ -1,12 +1,15 @@
 <html>
 <head>
   <title>LazeTravel</title>
+  <link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
-<link rel="stylesheet" type="text/css" href="../css/login.css">
 <body>
 
-  <div class="loginbox">
-    <h2>Log in</h2>
+    <h2>LazeTravel</h2>
+
+      <div class="loginbox">
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">

@@ -7,7 +7,8 @@ img {
 .pleasefloat {
   width: 33.333%;
   float: left;
-  text-align:center;
+  text-align: center;
+  margin-top: 20px;
 }
 h2 {
 	font-family: 'Mrs Sheppards', cursive;
@@ -71,4 +72,14 @@ h1 {
 }
 .clear {
   clear:both;
+}
+.front {
+  width:250px;
+  height:250px;
+  margin:0 auto;
+}
+.back {
+  width:250px;
+  height:250px;
+  margin:0 auto;
 }
